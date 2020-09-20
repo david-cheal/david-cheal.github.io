@@ -1,105 +1,92 @@
 html {
-    font-family: 'Amatic SC', cursive;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    position: relative;
+    font-family: monospace;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-weight: 700;
-    background-color: #f1faee;
-    -webkit-font-smoothing: antialiased;
-}
-
-.center {
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    background-image: url('../img/bg.svg');
+    background-size: cover;
 }
 
 .nav-bar {
     display: inline-flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     width: 100%;
-    background-color: #e63946;
+    height: 44px;
+    padding: 20px;
+    align-items: center;
+    background-color: #000000;
+}
+
+.nav-title {
+    font-size: 24pt;
+    padding-left: 0.5em;
     color: #ffffff;
-}
-
-.nav-bar a {
-    font-size: 2.5em;
-    color: #e63946;
-    text-decoration: none;
-    padding: 0 25px 0 25px;
-    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff, 1px 1px 1px rgba(255, 0, 0, 0);
-}
-
-.nav-bar a:hover {
-    color: #ffffff;
-    text-shadow: none;
-}
-
-.nav-links {
-    display: inline-flex;
-    list-style: none;
 }
 
 .nav-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    color: #ffffff;
-    padding: 4px;
-    outline-offset: 0px;
+    width: 64px;
+    filter: invert();
 }
 
 .container {
     display: flex;
-    flex-flow: column;
-    height: 300vh;
-}
-
-.page div {
-    display: flex;
+    flex-flow: row;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.landing {
+.item {
     display: flex;
     flex-flow: column;
-    color: #457b9d;
+    width: 30%;
+    height: 100%;
+    margin: 0px 24px 0px 24px;
+}
+
+.intro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 4em;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.intro p {
+    font-size: 1.2em;
 }
 
 .socials {
-    display: flex;
-    background-color: #e63946;
-}
-
-.projects {
-    display: flex;
-    background-color: #457b9d;
-}
-
-.introduction {
-    display: flex;
+    display: inline-flex;
     flex-flow: column;
-    width: 500px;
-    height: 500px;
-    line-height: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.title {
-    font-size: 6em;
+.socials ul {
+    display: inline-flex;
 }
 
-.subtitle {
-    font-size: 2em;
+.socials li {
+    font-size: 3em;
+    list-style: none;
+    padding-left: .25em;
+}
+
+.socials a {
+    color: #ffffff;
+}
+
+.socials a:hover {
+    color: orangered;
 }
