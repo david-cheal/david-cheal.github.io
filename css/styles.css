@@ -62,7 +62,7 @@ body {
 
 .intro h1 {
     font-size: 4em;
-    line-height: 0;
+    line-height: 1;
     text-transform: uppercase;
 }
 
