@@ -1,6 +1,10 @@
 html {
-    font-family: monospace;
     overflow: hidden;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
 
 body {
